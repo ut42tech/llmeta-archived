@@ -6,16 +6,16 @@ This project, "LLM Metaverse," is a lightweight WebXR metaverse experience that 
 
 ### Key Technologies:
 
--   **Client (Frontend):** Next.js, TypeScript, React Three Fiber, Colyseus.js, Radix UI, Tailwind CSS
--   **Server (Backend):** Colyseus, LiveKit, Supabase
+- **Client (Frontend):** Next.js, TypeScript, React Three Fiber, Colyseus.js, Radix UI, Tailwind CSS
+- **Server (Backend):** Colyseus, LiveKit, Supabase
 
 ### Architecture:
 
 The system is composed of a frontend and backend services.
 
--   **`client-prototype/`**: A Next.js application that renders the 3D world and handles user interactions (prototype).
--   **`server/`**: A Colyseus server that manages the real-time state of the metaverse, such as player positions and rotations.
--   **`docs/`**: Project documentation, including specifications, architecture diagrams, and development plans.
+- **`client-prototype/`**: A Next.js application that renders the 3D world and handles user interactions (prototype).
+- **`server/`**: A Colyseus server that manages the real-time state of the metaverse, such as player positions and rotations.
+- **`docs/`**: Project documentation, including specifications, architecture diagrams, and development plans.
 
 ## Building and Running
 
@@ -39,7 +39,7 @@ The client will be available at [http://localhost:3000](http://localhost:3000).
 
 ## Development Conventions
 
--   **Styling:** The project uses Tailwind CSS for styling, with some components from Radix UI.
--   **State Management:** Component-level state is managed with React hooks. Global state for the multiplayer experience is managed by Colyseus.
--   **3D:** The 3D scenes are built with `@react-three/fiber` and `@react-three/drei`, following a declarative, component-based approach.
--   **Multiplayer:** The connection to the Colyseus server is managed by the `useColyseusLifecycle` hook, which automatically connects and disconnects from the room.
+- **Styling:** The project uses Tailwind CSS for styling, with some components from Radix UI.
+- **State Management:** Component-level state is managed with React hooks. Global state for the multiplayer experience is managed by Colyseus.
+- **3D:** The 3D scenes are built with `@react-three/fiber` and `@react-three/drei`, following a declarative, component-based approach.
+- **Multiplayer:** The connection to the Colyseus server is managed by the `useColyseusLifecycle` hook, which automatically connects and disconnects from the room.
