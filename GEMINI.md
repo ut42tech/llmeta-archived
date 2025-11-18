@@ -13,7 +13,7 @@ This project, "LLM Metaverse," is a lightweight WebXR metaverse experience that 
 
 The system is composed of a frontend and backend services.
 
--   **`client/`**: A Next.js application that renders the 3D world and handles user interactions.
+-   **`client-prototype/`**: A Next.js application that renders the 3D world and handles user interactions (prototype).
 -   **`server/`**: A Colyseus server that manages the real-time state of the metaverse, such as player positions and rotations.
 -   **`docs/`**: Project documentation, including specifications, architecture diagrams, and development plans.
 
@@ -30,7 +30,7 @@ npm start
 ### 2. Next.js Client
 
 ```bash
-cd client
+cd client-prototype
 npm install
 npm run dev
 ```

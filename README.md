@@ -74,7 +74,7 @@ cp .env.example .env    # 初回のみ。GitHub OAuth のクレデンシャル�
 supabase start
 ```
 
-`supabase start` 実行後、ターミナルに表示される `anon key` を `client/.env.local` の `NEXT_PUBLIC_SUPABASE_ANON_KEY` に設定してください。
+`supabase start` 実行後、ターミナルに表示される `anon key` を `client-prototype/.env.local` の `NEXT_PUBLIC_SUPABASE_ANON_KEY` に設定してください。
 同時に `API URL` が `http://127.0.0.1:54321` なのか `http://localhost:54321` なのかを確認し、その値に合わせて `SUPABASE_AUTH_EXTERNAL_GITHUB_REDIRECT_URI` を更新します。
 
 GitHub OAuth アプリは以下の設定で作成し、取得したクレデンシャルと合わせて `supabase/.env` に保存します。
@@ -101,7 +101,7 @@ npm start
 ### 2. Next.js クライアントの起動
 
 ```bash
-cd client
+cd client-prototype
 yarn install
 yarn dev
 ```
@@ -110,6 +110,6 @@ yarn dev
 
 ## ディレクトリ構成
 
-- **`client/`:** 3D ワールドをレンダリングし、ユーザーインタラクションを処理する Next.js フロントエンドアプリケーション。
+- **`client-prototype/`:** 3D ワールドをレンダリングし、ユーザーインタラクションを処理する Next.js フロントエンドアプリケーション（プロトタイプ）。
 - **`server/`:** プレイヤーの位置や回転など、メタバースのリアルタイムな状態を管理する Colyseus サーバー。
 - **`docs/`:** 仕様書、アーキテクチャ図、開発計画などのプロジェクトドキュメント。
